@@ -1,0 +1,32 @@
+//Write code to Check if two strings are Anagram or not
+#include <bits/stdc++.h>
+using namespace std;
+ //Anagram is a sentance which can be framed by using same alphabets of other string
+bool  is_Anagram( string s1,string s2){
+    if(s1.length()!=s2.length()){
+        cout<<"not";
+    }
+    
+        sort(s1.begin(),s1.end());
+        sort(s2.begin(),s2.end());
+        
+        for( int i=0;i<s1.length();i++){
+            if(s1[i]!=s2[i]){
+                cout<<"no";
+            }
+        }
+
+        return true;
+}
+int main(){
+    string a = "ha";
+    string b = "haa";
+    if (is_Anagram(a,b)){
+        cout<<"yes";
+    }
+    else{
+        cout<<"no";
+    }
+    return 0;
+    
+}
