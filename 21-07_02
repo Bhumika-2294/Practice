@@ -1,0 +1,19 @@
+// •	Write a code to Remove all characters from string except alphabets
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    string n;
+    getline(cin,n);
+    string c;
+    for(int i=0;i<n.length();i++){
+        if(isalpha(n[i])){
+            c.push_back(n[i]);
+        }
+        
+    }
+    for(int i=0;i<c.length();i++){
+        cout<<c[i];
+        
+    }
+    return 0;
+}
