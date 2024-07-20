@@ -1,0 +1,31 @@
+//•	Find non-repeating characters in a string
+
+#include <bits/stdc++.h>
+using namespace std;
+ int main(){
+     string n;
+     vector<char> NR;
+     getline(cin,n);
+     int i=0;
+     
+     sort(n.begin(),n.end());
+     int count = 1;
+     for(int i=0;i<n.length();i++){
+         if(i < n.length() - 1 && n[i]==n[i+1] ){
+             
+            count++;
+
+         }
+         else{
+             if(n[i]!=n[i+1] && count==1){
+             NR.push_back(n[i]);
+            }
+            count=1;
+         }
+         
+         
+     }
+     cout<<"The Non-Repeating characters are ";
+     for(int i=0;i<NR.size();i++){
+     cout<<NR[i]<<",";}
+ }
