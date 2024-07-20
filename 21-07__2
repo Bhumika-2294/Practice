@@ -1,0 +1,21 @@
+//•	Write to code to check whether a given year is leap year or not.
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int Year;
+    cin>>Year;
+    
+    if(Year%4==0 && Year%100!=0 || Year%400==0){
+        if(Year<2024){
+        cout<<Year<<" was a leap Year.\n";}
+        else{
+        cout<<Year<<" will be a leap Year.\n";
+
+        }
+    }
+    else{
+        cout<<Year<<" is not a leap Year.\n";
+
+    }
+}
