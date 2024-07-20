@@ -1,0 +1,57 @@
+#include <bits/stdc++.h>
+using namespace std;
+class freq{
+    int counter=1;
+    int count=1;
+    int i=0;
+
+    public:
+        void sort(string &n){
+                int a=n.length();
+
+        
+        while(counter<a){
+            for(i=0;i<a-1;i++){
+                if(n[i]>n[i+1]){
+                    int temp = n[i];
+                    n[i]     = n[i+1];
+                    n[i+1]   = temp;
+                }
+            }
+            counter++;
+        }
+       
+        }
+        
+        void countfreq(string &n){
+                int a=n.length();
+
+            sort(n);
+            
+                for(i=0;i<a;i++){
+                if(n[i]==n[i+1])
+                {   count++;
+                    
+                }
+                else{
+                    cout<<"freq of "<<n[i]<<" is "<<count<<"\n";
+                    count=1;
+                }
+                
+                }
+                
+                
+                
+            
+        }
+            
+};
+
+
+
+int main(){
+    string n = "ghfhtg,km  hgugg";
+    freq f1;
+    f1.countfreq(n);
+    return 0;
+}
