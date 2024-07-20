@@ -1,0 +1,24 @@
+// •	Write a program to check whether a character is a vowel or consonant
+
+#include <bits/stdc++.h>
+#include <cctype>
+using namespace std;
+bool isVowel(char a){
+    a=tolower(a);
+    return (a == 'a' || a == 'e' || a== 'i' || a == 'o' || a == 'u');
+     
+}
+int main(){
+    char a;
+    cin>>a;
+    if(isalpha(a)){
+        cout<< isVowel(a);
+    }
+    else{
+        cout<<"enter an alphabet";
+    }
+    
+    return 0;
+}
+
+
