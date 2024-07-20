@@ -1,0 +1,18 @@
+// 12.•	Write a code to find an Automorphic number
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    int unit = n%10;
+    
+    if(unit == ((n*n)%10) || unit==0)
+    {
+        cout<<"this is automorphic .\n";
+    }
+    else{
+        cout<<"is not";
+    }
+    return 0;
+}
