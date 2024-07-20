@@ -1,0 +1,24 @@
+// 12.•	Write a code to find an Automorphic number
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+     char a;
+     cin>>a;
+     
+     int ascii;
+     
+     ascii = static_cast<int>(a);
+     cout<<ascii;
+     return 0;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
