@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void sort(string &n)
+{
+    int a=n.length();
+    int counter = 1;
+    while(counter<a){
+        for(int i=0;i<a-1;i++){
+            if(n[i]>n[i+1]){
+                char temp = n[i];
+                n[i] = n[i+1];
+                n[i+1]  = temp;
+            }   
+        }counter++;
+    }
+    for(int i=0;i<n.length();i++){
+        cout<<n[i];
+    }
+}
+
+int main(){
+    string n = "4259*6";
+    
+    sort(n); 
+    return 0;
+}
