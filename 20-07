@@ -1,0 +1,20 @@
+// •	Write code Check if the given string is Palindrome or not
+#include <bits/stdc++.h>
+
+using namespace std;
+
+bool is_palin(string a){
+    string rev;
+    for(int i=(a.length()-1);i>=0;i--){
+        rev += a[i];
+    }
+    return a == rev;
+}
+int main(){
+    string a;
+    cout<<"enter";
+    getline(cin, a);
+    
+    cout<<(is_palin(a) ? "true" : "false");
+    return 0;
+}
