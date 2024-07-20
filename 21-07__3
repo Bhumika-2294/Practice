@@ -1,0 +1,29 @@
+// •	Write the code to for Armstrong number
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    int rem, sum=0;
+    cin>>n;
+    int temp = n;
+    // if(n==0){
+    //     cout<<"Enter a  valid no.\n";
+    // }
+    while(n>0){
+         rem = n % 10 ;
+         
+         sum = sum + ((rem)*(rem)*(rem));
+         
+         n=n/10;
+    }
+    if(temp==sum){
+        cout<<"yes\n";
+    }
+    else{
+        cout<<"no\n" ;
+    }
+    
+    return 0;
+    
+}
